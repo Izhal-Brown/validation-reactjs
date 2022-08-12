@@ -47,8 +47,8 @@ class Validation extends React.Component {
 
     if(nohp.length === 0){
       message = [...message, 'Isikan No Handphone anda']
-    } else if (nohp === /^\+?([ -]?\d+)+|\(\d+\)([ -]\d+)$/){
-      message = [...message, 'No Handphone tidak sesuai']
+    } else if (nohp > 12){
+      message = [...message, 'No Handphone tidak lebih dari 12 angka']
     } 
 
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
