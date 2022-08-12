@@ -131,7 +131,7 @@ class Validation extends React.Component {
                 </Row>
                 <Row className="input-item">
                   <Form.Label htmlFor="nohp">Nomor Handphone :</Form.Label>
-                  <Form.Control type="tel" pattern="[0-9]" name='nohp' onChange={e => this.setState ({nohp : e.target.value})}/>
+                  <Form.Control type="tel" pattern="[0-9]{12}" name='nohp' onChange={e => this.setState ({nohp : e.target.value})}/>
                 </Row>
                 <Row className="input-item">
                   <Form.Label htmlFor="email">Email :</Form.Label>
